@@ -1,0 +1,30 @@
+﻿@model List<DOTNETMACHINETEST.Models.Domain.Product>
+
+@{
+}
+
+<h1>Product List</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ProductId</th>
+            <th>ProductName</th>
+            <th>CategoryId</th>
+            <th>CategoryName</th>
+            <th> </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.ProductId</td>
+                <td>@product.ProductName</td>
+                <td>@product.CategoryId</td>
+                <td>@product.CategoryName</td>
+                <td><a href="Products/View/@product.ProductId">View</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

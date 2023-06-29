@@ -1,0 +1,21 @@
+﻿@model DOTNETMACHINETEST.Models.AddProductViewModel
+@{
+}
+
+<h1>Add Products and Categories</h1>
+<form method="post" action="Add" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">ProductName</label>
+        <input type="text" class="form-control" asp-for="ProductName">
+    </div>
+       <div class="mb-3">
+        <label for="" class="form-label">CategoryId</label>
+        <input type="int" class="form-control" asp-for="CategoryId">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">CategoryName</label>
+        <input type="text" class="form-control" asp-for="CategoryName">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
